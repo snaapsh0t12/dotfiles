@@ -7,10 +7,6 @@ dotfiles:
     src: zshrc
     dst: ~/.zshrc
     chmod: '644'
-  d_oh-my-zsh:
-    src: oh-my-zsh
-    dst: ~/.oh-my-zsh
-    chmod: '755'
   d_latte:
     src: config/latte
     dst: ~/.config/latte
@@ -27,13 +23,17 @@ dotfiles:
   d_icons:
     src: icons
     dst: ~/.icons
+  d_themes:
+    src: oh-my-zsh/themes
+    dst: ~/.oh-my-zsh/themes
+    chmod: '755'
 profiles:
   something:
     dotfiles:
     - f_zshrc
-    - d_oh-my-zsh
     - d_latte
     - d_wallpapers
     - d_konsole
     - d_color-schemes
     - d_icons
+    - d_themes
