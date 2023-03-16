@@ -23,10 +23,9 @@ dotfiles:
   d_icons:
     src: icons
     dst: ~/.icons
-  d_themes:
-    src: oh-my-zsh/themes
-    dst: ~/.oh-my-zsh/themes
-    chmod: '755'
+  d_nvim:
+    src: config/nvim
+    dst: ~/.config/nvim
 profiles:
   something:
     dotfiles:
@@ -36,4 +35,3 @@ profiles:
     - d_konsole
     - d_color-schemes
     - d_icons
-    - d_themes
