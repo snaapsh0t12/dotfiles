@@ -2,4 +2,4 @@
 
 Still not quite sure what I should probably put in here
 
-Currently using something I found online called dotdrop to back them up, it seems good enough.
+Just made my own little scripts to import and install found in the root of the directory.
