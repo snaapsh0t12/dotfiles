@@ -1,0 +1,5 @@
+.config/hypr/
+.config/waybar/
+.config/alacritty/
+.config/rofi/
+.zshrc
