@@ -22,4 +22,4 @@ swaylock \
     --inside-wrong-color f38ba8 \
     --inside-clear-color a6e3a1 \
     --indicator-caps-lock \
-    --image ~/Pictures/Wallpapers/arch-black-4k.png
+    --image ~/Pictures/Wallpapers/lock.png

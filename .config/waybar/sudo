@@ -1,1 +1,0 @@
-enable,0xffffffff tee /proc/acpi/ibm/hotkey

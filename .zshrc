@@ -72,7 +72,7 @@ HYPRLAND_INTERACTIVE_SCREENSHOT_SAVEDIR=~/Pictures/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git rust)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -103,5 +103,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export PATH=$PATH:/home/aiden/.spicetify:/home/aiden/.local/bin
+export PATH=$PATH:/home/aiden/CEdev/bin
+alias cat=bat
+alias ls="erd --config ls"
 
 eval $(thefuck --alias fuck)

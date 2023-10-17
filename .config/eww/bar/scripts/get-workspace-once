@@ -1,0 +1,25 @@
+WORKSPACE_WINDOWS=$(hyprctl workspaces -j | jq 'map({key: .id | tostring, value: .windows}) | from_entries')
+
+
+if [[ "$1" == "1" ]]; then
+	WINDOWS=$(seq 1 10 | jq --argjson windows "${WORKSPACE_WINDOWS}" --slurp -Mc 'map(tostring) | map({id: ., windows: ($windows[.]//0)}) | map(select(.id == "1").windows) | add')
+elif [[ "$1" == "2" ]]; then
+	WINDOWS=$(seq 1 10 | jq --argjson windows "${WORKSPACE_WINDOWS}" --slurp -Mc 'map(tostring) | map({id: ., windows: ($windows[.]//0)}) | map(select(.id == "2").windows) | add')
+elif [[ "$1" == "3" ]]; then
+	WINDOWS=$(seq 1 10 | jq --argjson windows "${WORKSPACE_WINDOWS}" --slurp -Mc 'map(tostring) | map({id: ., windows: ($windows[.]//0)}) | map(select(.id == "3").windows) | add')
+elif [[ "$1" == "4" ]]; then
+	WINDOWS=$(seq 1 10 | jq --argjson windows "${WORKSPACE_WINDOWS}" --slurp -Mc 'map(tostring) | map({id: ., windows: ($windows[.]//0)}) | map(select(.id == "4").windows) | add')
+elif [[ "$1" == "5" ]]; then
+	WINDOWS=$(seq 1 10 | jq --argjson windows "${WORKSPACE_WINDOWS}" --slurp -Mc 'map(tostring) | map({id: ., windows: ($windows[.]//0)}) | map(select(.id == "5").windows) | add')
+elif [[ "$1" == "6" ]]; then
+	WINDOWS=$(seq 1 10 | jq --argjson windows "${WORKSPACE_WINDOWS}" --slurp -Mc 'map(tostring) | map({id: ., windows: ($windows[.]//0)}) | map(select(.id == "6").windows) | add')
+fi
+
+if [[ "$WINDOWS" == "0" ]]; then
+    WINDOWS=""
+else
+    WINDOWS="$1"
+fi
+
+echo $WINDOWS
+
