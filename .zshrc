@@ -105,6 +105,6 @@ source $ZSH/oh-my-zsh.sh
 export PATH=$PATH:/home/aiden/.spicetify:/home/aiden/.local/bin
 export PATH=$PATH:/home/aiden/CEdev/bin
 alias cat=bat
-alias ls="erd --config ls"
+#alias ls="erd --config ls"
 
 eval $(thefuck --alias fuck)
