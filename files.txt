@@ -2,5 +2,8 @@
 .config/eww/
 .config/alacritty/
 .config/rofi/
+.config/wlogout
 .config/swaylock
+.config/nvim
+.config/Kvantum
 .zshrc

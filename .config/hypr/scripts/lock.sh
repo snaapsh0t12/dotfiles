@@ -21,5 +21,4 @@ swaylock \
     --inside-ver-color 89b4fa\
     --inside-wrong-color f38ba8 \
     --inside-clear-color a6e3a1 \
-    --indicator-caps-lock \
-    --image ~/Pictures/Wallpapers/lock.png
+    --indicator-caps-lock 

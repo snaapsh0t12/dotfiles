@@ -1,0 +1,43 @@
+@define-color black #161621;
+
+
+
+window {
+    font-family: monospace;
+    font-size: 80px;
+    color: #cdd6f4; /* text */
+    background-color: rgba(23, 22, 22, 0.1);
+    transition: ease-in;
+}
+
+grid {
+  border-radius: 30px;
+  margin: 300px 500px;
+  padding: 10px;
+  background-color: rgba(23, 22, 22, 0.8);
+}
+
+button {
+  border-radius: 20px;
+  border-width: 3px;
+  border-color: @black;
+  outline-style: none;
+  margin: 5px;
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-size: 0%;
+  background-position: center;
+  background-color: @black;
+}
+
+button:hover {
+    background-color: rgba(49, 50, 68, 0.9);
+}
+
+button:focus {
+    background-color: #2d2d41;
+    color: #cdd6f4;
+    transition-duration: 0.2s;
+}
+
+
