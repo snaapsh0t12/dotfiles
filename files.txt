@@ -1,9 +1,9 @@
-.config/hypr/
-.config/eww/
-.config/alacritty/
-.config/rofi/
-.config/wlogout
+.config/hypr
+.config/eww
+.config/alacritty
+.config/rofi
 .config/swaylock
+.config/wlogout
 .config/nvim
 .config/Kvantum
 .zshrc
