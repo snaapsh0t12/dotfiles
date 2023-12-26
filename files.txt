@@ -6,4 +6,5 @@
 .config/wlogout
 .config/nvim
 .config/Kvantum
+.config/kdeglobals
 .zshrc
